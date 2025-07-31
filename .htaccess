@@ -1,0 +1,14 @@
+# Increase PHP limits for large file uploads
+php_value upload_max_filesize 100M
+php_value post_max_size 100M
+php_value max_execution_time 1800
+php_value max_input_time 1800
+php_value memory_limit 2G
+
+# Increase timeout for large file processing
+php_value max_input_vars 10000
+php_value max_file_uploads 50
+
+# Enable output buffering
+php_value output_buffering On
+php_value output_handler ob_gzhandler 
